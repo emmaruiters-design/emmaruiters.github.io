@@ -17,7 +17,7 @@
   IMAGES - make a folder called  images  and upload:
        images/portrait.jpg   portrait, approx 800x1000
        images/fynbos.png     approx 16:10
-       images/logo-oxford.png, logo-soas.png, logo-uct.jpg
+       images/logo-oxford.png, logo-soas.png, logo-uct.png
                              university logos, PNG, transparent
        images/zenbu.png      approx 16:10
   ================================================================
@@ -196,12 +196,12 @@ h2.sec{
 /* portrait frame — arched top, gold hairline */
 .portrait{position:relative}
 .portrait .frame{
-  position:relative; aspect-ratio:4/5;
+  position:relative; aspect-ratio:1/1;
   border:1px solid var(--hair);
   border-radius:14rem 14rem 3px 3px;
   overflow:hidden; background:var(--mint2);
 }
-.portrait .frame img{width:100%; height:100%; object-fit:cover}
+.portrait .frame img{width:100%; height:100%; object-fit:cover; object-position:center top}
 .portrait::after{
   content:""; position:absolute; inset:auto -1rem -1rem auto;
   width:60%; height:60%; border-right:1px solid var(--hair); border-bottom:1px solid var(--hair);
@@ -292,8 +292,8 @@ h2.sec{
 }
 .band--alt .folio article{background:var(--mint3)}
 .folio article:hover{border-color:var(--burnt); transform:translateY(-3px)}
-.shot{aspect-ratio:16/10; background:var(--mint2); position:relative; overflow:hidden}
-.shot img{width:100%; height:100%; object-fit:cover}
+.shot{aspect-ratio:16/10; background:#fff; position:relative; overflow:hidden}
+.shot img{width:100%; height:100%; object-fit:contain; padding:1.6rem}
 .folio .txt{padding:1.4rem 1.5rem 1.6rem}
 .folio h3{font-family:var(--display); font-weight:400; font-size:1.3rem; margin:0 0 .15rem}
 .folio .kind{font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--burnt); display:block; margin-bottom:.7rem}
@@ -789,7 +789,7 @@ footer .links a:hover strong{color:var(--accent-dark)}
             <p>MSc Development Economics and Economics Grad Diploma, SOAS, University of London</p>
           </li>
           <li>
-            <div class="crest"><img src="images/logo-uct.jpg" alt="University of Cape Town" onerror="ph(this,'images/logo-uct.png','Logo, PNG')"></div>
+            <div class="crest"><img src="images/logo-uct.png" alt="University of Cape Town" onerror="ph(this,'images/logo-uct.png','Logo, PNG')"></div>
             <p>Economic History and English Literature, University of Cape Town</p>
           </li>
         </ul>
