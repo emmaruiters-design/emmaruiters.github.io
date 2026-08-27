@@ -4,11 +4,7 @@
   jlcsa.html  -  the JLCSA story page
   Styling comes from style.css, shared with index.html.
 
-  Search for TODO to find the bits to fill in:
-    - the growth story paragraphs
-    - YouTube video IDs
-    - press links
-    - Comic Con photos and captions
+  Still to add: photo captions in the Comic Con carousel.
 
   PHOTOS go in images/jlcsa/ :
     hero.jpg, comiccon-1.jpg ... comiccon-4.jpg
@@ -66,15 +62,15 @@ function ph(img, path, hint){
 <header class="phero phero--bare">
   <div class="wrap">
     <a class="crumb" href="/">&larr; Emma Ruiters</a>
-    <span class="label">Founded 2020 &middot; Sold 2026</span>
+    <span class="label">Founded January 2020 &middot; Sold 2026</span>
     <h1>JLCSA</h1>
-    <p class="standfirst">South Africa&rsquo;s first Japanese language club, built from a study group in Cape Town into a business, and sold six years later.</p>
+    <p class="standfirst">South Africa&rsquo;s first Japanese language club, built from a study group in Johannesburg into a school, and sold six years later.</p>
 
     <div class="stats">
       <div><b>1,000+</b><span>members</span></div>
-      <div><b>300+</b><span>students</span></div>
-      <div><b>3</b><span>cities: Cape Town, Pretoria, Johannesburg</span></div>
-      <div><b>6</b><span>years, founded to exit</span></div>
+      <div><b>300+</b><span>active students</span></div>
+      <div><b>R1.2m</b><span>annual revenue, team of eight</span></div>
+      <div><b>24+</b><span>events a year, four cities</span></div>
     </div>
   </div>
 </header>
@@ -83,13 +79,26 @@ function ph(img, path, hint){
 <section class="band" id="story">
   <div class="wrap">
     <span class="label">The story</span>
-    <h2 class="sec">From a study group to a business</h2>
+    <h2 class="sec">Six years of JLCSA, from its founder</h2>
 
     <div class="prose">
-      <p>TODO &mdash; how it started. What was missing in South Africa, and why you began it in January 2020.</p>
-      <p>TODO &mdash; how it grew. The move from one city to three, what the offer became: classes, resources, events, translation and consulting.</p>
-      <p>TODO &mdash; the hardest part. What nearly broke it, or what you got wrong first.</p>
-      <p>TODO &mdash; the exit. Why you stepped down as Director in 2026 and what happens to the club now.</p>
+      <h3 class="subhead accent">i. It started with a failure</h3>
+      <p>I founded JLCSA in January 2020 after failing JLPT N1, which I had been aggressively studying for alongside a full-time consulting job. I couldn&rsquo;t face studying on my own again. The first version was simply people meeting up. Then Covid arrived and we moved everything online, which turned out to be the making of it: a distributed community rather than a Johannesburg social club, and a sense of connection for a lot of people at a hard time.</p>
+      <p>When students started asking for lessons I took a few on myself, but alongside a full-time job it was rewarding and tiring in equal measure, and I could not keep up with demand. So I found someone who could teach properly. Toshiki Tanisaki, an astrophysics graduate then studying South African landscaping, became our first teacher, and that hire was the moment a study group became a school.</p>
+
+      <h3 class="subhead accent">ii. Building the product ladder</h3>
+      <p>Growth came from productising, not marketing. Free community and events brought people in. We started with individual classes but moved quickly to courses: the first structured N5 course launched in 2022, then Hiragana and Katakana and N4 in 2023, and N3 in 2024, alongside a booking system to handle the volume. Because Japanese textbooks were expensive in South Africa, we produced our own, designed for online teaching, and bundled them with some of the courses. A partnership with Stellenbosch University&rsquo;s Japan Centre gave the courses institutional backing and a more formal footing. Tiered membership, a points system and a member portal followed.</p>
+      <p>Each layer made the next one possible, and each one moved us further from selling my time.</p>
+
+      <h3 class="subhead accent">iii. Growth outran the systems</h3>
+      <p>2024 was the year it broke and got fixed. We passed R1 million in revenue for the first time, which meant VAT registration and an accounting firm. It also exposed everything held together manually: students booking without paying, no reliable view of classes held against classes redeemed, payment queries scattered across teachers, and a team burning out. We had to digitise in order to hold quality while serving both existing clients and new ones.</p>
+      <p>The fix was engineering rather than effort. We digitised the booking system, moved accounting onto Xero and payment upfront through Stripe, built automated class tracking that prompted teachers to confirm delivery, centralised payments away from teaching staff, moved every teacher onto their own infrastructure, and standardised the online teaching stack.</p>
+      <p>Revenue reached R1.2 million with a team of eight. By then we had over 1,000 members, more than 300 active students, and were running at least 24 events a year across Johannesburg, Cape Town, Pretoria and, increasingly, Bloemfontein.</p>
+
+      <h3 class="subhead accent">iv. Beyond the classroom</h3>
+      <p>Alongside the core business we built consulting revenue in market research, talent placement, e-commerce strategy and cultural consulting for Japanese companies entering South Africa, including Delaire Graff and Oji Shop. We also ran translation contracts, including a seven-month Japanese to English project for a biotech startup. We launched a corporate cultural events offering covering tea ceremony, calligraphy, manga and similar, and ran the stage at OtakuTown, the Japanese and Asian culture area of Comic Con Africa and Comic Con Cape Town.</p>
+      <p>By 2025 the obvious next step was product: a student incentives system for attending events and joining classes, and a language learning web app built on what six years of teaching data told us students actually got stuck on. That would become Zenbu, the app I am building now.</p>
+      <p>After six years, I sold the business in 2026. It had a team, a curriculum and a customer base that no longer depended on me, which was the point. Running it alongside a full-time job was never going to be indefinite, and the ideas I most wanted to build needed more than the business could hold. So I handed it over and moved on to the next thing I wanted to build.</p>
     </div>
   </div>
 </section>
@@ -100,40 +109,41 @@ function ph(img, path, hint){
     <span class="label">Press</span>
     <h2 class="sec">In the news</h2>
 
-    <ul class="pubs">
-      <li>
-        <h3><a href="TODO-url">TODO &mdash; headline</a></h3>
-        <p class="meta">Outlet &middot; format &middot; year</p>
-      </li>
-      <li>
-        <h3><a href="TODO-url">TODO &mdash; headline</a></h3>
-        <p class="meta">Outlet &middot; format &middot; year</p>
-      </li>
-      <!-- Copy a block above for each additional item. -->
-    </ul>
-  </div>
-</section>
-
-<!-- ═══ VIDEO ═════════════════════════════════════════════════
-     Replace VIDEO_ID with the id from a YouTube URL. In
-     https://www.youtube.com/watch?v=dQw4w9WgXcQ the id is
-     the part after v= .  Delete any .vid block you do not need.
-     ═══════════════════════════════════════════════════════ -->
-<section class="band" id="video">
-  <div class="wrap">
-    <span class="label">Video</span>
-    <h2 class="sec">On air</h2>
-
+    <h3 class="subhead accent">Broadcast</h3>
     <div class="vids">
       <figure style="margin:0">
-        <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="TODO video title" loading="lazy" allowfullscreen></iframe></div>
-        <p class="vid-cap">TODO &mdash; what this is, outlet and year.</p>
+        <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/PpQLVg5DUNU" title="Emma Ruiters on Newzroom Africa at Comic Con, 2023" loading="lazy" allowfullscreen></iframe></div>
+        <p class="vid-cap">Newzroom Africa, live from Comic Con Africa &middot; 2023</p>
       </figure>
       <figure style="margin:0">
-        <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="TODO video title" loading="lazy" allowfullscreen></iframe></div>
-        <p class="vid-cap">TODO &mdash; what this is, outlet and year.</p>
+        <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/R_c1R3Odpss" title="Emma Ruiters on eNCA at Comic Con, 2023" loading="lazy" allowfullscreen></iframe></div>
+        <p class="vid-cap">eNCA, live from Comic Con Africa &middot; 2023</p>
       </figure>
     </div>
+
+    <h3 class="subhead accent">Radio</h3>
+    <ul class="pubs">
+      <li>
+        <h3><a href="https://omny.fm/shows/powertalk-archive/culture-corner-japanese-culture-and-customs">Culture Corner: Japanese Culture and Customs</a></h3>
+        <p class="meta">PowerTalk with Lerato Mbele &middot; 2022</p>
+      </li>
+    </ul>
+
+    <h3 class="subhead accent">Coverage</h3>
+    <ul class="pubs">
+      <li>
+        <h3><a href="https://www.glitched.online/day-one-at-comic-con-africa-2023-delivers-coachella-for-geeks/">Day One at Comic Con Africa 2023 Delivers Coachella for Geeks</a></h3>
+        <p class="meta">Glitched &middot; 2023</p>
+      </li>
+      <li>
+        <h3><a href="https://bnews.vn/tung-bung-le-hoi-comic-con-africa-nam-2023-tai-nam-phi/307549.html">Comic Con Africa 2023</a></h3>
+        <p class="meta">BNews, Vietnam &middot; 2023</p>
+      </li>
+      <li>
+        <h3><a href="https://youtu.be/K1mOTZZuexA">JLCSA and OtakuTown at Comic Con</a></h3>
+        <p class="meta">YouTube coverage &middot; also <a href="https://youtu.be/XF6WKKI5Bgw">here</a></p>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -142,13 +152,13 @@ function ph(img, path, hint){
      block to add a photo; delete one to remove it. Photos live in
      images/jlcsa/ and vanish silently if missing.
      ═══════════════════════════════════════════════════════ -->
-<section class="band band--alt" id="comiccon">
+<section class="band" id="comiccon">
   <div class="wrap">
     <span class="label">Events</span>
     <h2 class="sec">Comic Con and beyond</h2>
 
     <div class="prose">
-      <p>TODO &mdash; one short paragraph: which Comic Con events, which years, and what JLCSA did there.</p>
+      <p>From 2023 JLCSA ran the stage at OtakuTown, the Japanese and Asian culture area of Comic Con Africa in Johannesburg and Comic Con Cape Town, hosting and compering the programme across both cities. It became the club&rsquo;s largest public platform, and the reason broadcasters came looking for us.</p>
     </div>
 
     <div class="carousel">
