@@ -486,6 +486,43 @@ footer .links a:hover strong{color:var(--accent-dark)}
 .band--alt .statline li{color:var(--on-dark-dim)}
 .band--alt .statline b{color:var(--accent-dark)}
 
+
+/* === perspective: text left, numbers right ===================== */
+.believe{display:grid; grid-template-columns:1.6fr .8fr; gap:4rem; align-items:start}
+.claim{font-family:var(--display); font-weight:300;
+  font-size:clamp(1.35rem,2.8vw,1.9rem); line-height:1.4;
+  max-width:34ch; margin:.6rem 0 2.75rem; color:var(--ink)}
+.themes ol{list-style:none; counter-reset:t; margin:0; padding:0}
+.themes ol li{counter-increment:t; position:relative;
+  padding:1.8rem 0 1.8rem 3rem; border-top:1px solid var(--hair)}
+.themes ol li::before{content:counter(t,lower-roman) ".";
+  position:absolute; left:0; top:2rem; font-size:.78rem; font-weight:600;
+  letter-spacing:.1em; color:var(--burnt)}
+.themes h3{font-family:var(--display); font-weight:400; font-size:1.25rem;
+  line-height:1.3; margin:0 0 .55rem; color:var(--ink)}
+.themes ol p{margin:0; font-size:.96rem; color:var(--dim); max-width:60ch}
+
+.nums{position:sticky; top:6rem}
+.nums h3{font-family:var(--body); font-size:.7rem; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--burnt);
+  margin:.6rem 0 1.25rem}
+.nums ul{list-style:none; margin:0; padding:0}
+.nums li{padding:1rem 0; border-top:1px solid var(--hair)}
+.nums b{display:block; font-family:var(--display); font-weight:400;
+  font-size:2.1rem; line-height:1; color:var(--ink); margin-bottom:.3rem}
+.nums span{font-size:.84rem; color:var(--dim); display:block}
+
+.band--alt .claim, .band--alt .themes h3, .band--alt .nums b{color:var(--on-dark)}
+.band--alt .themes ol p, .band--alt .nums span{color:var(--on-dark-dim)}
+.band--alt .themes ol li, .band--alt .nums li{border-color:var(--hair-dark)}
+.band--alt .themes ol li::before, .band--alt .nums h3{color:var(--accent-dark)}
+
+@media (max-width:900px){
+  .believe{grid-template-columns:1fr; gap:2.5rem}
+  .nums{position:static}
+  .nums ul{display:grid; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); gap:0 1.5rem}
+}
+
 /* ═══ project page (jlcsa.html) ════════════════════════════════ */
 .crumb{display:inline-flex; align-items:center; gap:.5rem; font-size:.75rem;
   letter-spacing:.12em; text-transform:uppercase; color:var(--burnt); margin-bottom:1.5rem}
