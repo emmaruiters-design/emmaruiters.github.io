@@ -194,7 +194,7 @@ h2.sec{
 /* faint outline watermark behind a section */
 .band .mark-bg{
   position:absolute; right:-4rem; top:50%; transform:translateY(-50%);
-  width:34rem; max-width:55%; opacity:.05; pointer-events:none; z-index:0;
+  width:38rem; max-width:60%; opacity:.11; pointer-events:none; z-index:0;
 }
 .band .mark-bg path{fill:var(--green-lt)}
 .band .wrap{position:relative; z-index:1}
@@ -431,7 +431,7 @@ footer .fine{margin-top:2.5rem; font-size:.78rem; color:var(--dim); letter-spaci
 .band--alt .ph{border-color:var(--hair-dark); color:var(--accent-dark); background:#122a1d}
 .band--alt .ph small{color:var(--on-dark-dim)}
 .band--alt .mark-bg path{fill:var(--on-dark)}
-.band--alt .mark-bg{opacity:.06}
+.band--alt .mark-bg{opacity:.10}
 
 /* "coming soon" states — present, but not yet clickable */
 footer .links .soon-link{
@@ -608,6 +608,14 @@ footer .links a:hover strong{color:var(--accent-dark)}
 .crumb{display:inline-flex; align-items:center; gap:.5rem; font-size:.75rem;
   letter-spacing:.12em; text-transform:uppercase; color:var(--burnt); margin-bottom:1.5rem}
 .crumb:hover{color:var(--ink)}
+
+
+.pron{
+  display:inline-block; font-family:var(--body); font-weight:400;
+  font-size:.9rem; letter-spacing:.06em; color:var(--burnt);
+  vertical-align:middle; margin-left:.7rem;
+}
+.pron::before{content:"("} .pron::after{content:")"}
 
 .phero{padding:4rem 0 3rem}
 .phero--bare{padding-top:2.5rem}
