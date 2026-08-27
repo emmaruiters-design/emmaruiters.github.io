@@ -523,6 +523,40 @@ footer .links a:hover strong{color:var(--accent-dark)}
   .nums ul{display:grid; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); gap:0 1.5rem}
 }
 
+
+/* === image carousel =========================================== */
+.carousel{position:relative; margin:2rem 0 0}
+.carousel-track{
+  display:flex; gap:1rem; overflow-x:auto; scroll-behavior:smooth;
+  scroll-snap-type:x mandatory; padding-bottom:.5rem;
+  scrollbar-width:thin; scrollbar-color:var(--burnt) transparent;
+}
+.carousel-track::-webkit-scrollbar{height:4px}
+.carousel-track::-webkit-scrollbar-thumb{background:var(--burnt); border-radius:2px}
+.carousel-track figure{
+  flex:0 0 min(30rem, 82%); margin:0; scroll-snap-align:start;
+}
+.carousel-track .shotbox{
+  aspect-ratio:3/2; background:var(--mint2);
+  border:1px solid var(--hair); overflow:hidden;
+}
+.carousel-track img{width:100%; height:100%; object-fit:cover; display:block}
+.carousel-track figcaption{margin-top:.6rem; font-size:.85rem; color:var(--dim)}
+.carousel-nav{display:flex; gap:.5rem; margin-top:1rem}
+.carousel-nav button{
+  width:2.4rem; height:2.4rem; border:1px solid var(--burnt); background:none;
+  color:var(--burnt); cursor:pointer; border-radius:2px; font-size:1rem;
+  line-height:1; transition:background .2s, color .2s;
+}
+.carousel-nav button:hover{background:var(--burnt); color:var(--mint)}
+.carousel-nav button:disabled{opacity:.3; cursor:default}
+.carousel-nav button:disabled:hover{background:none; color:var(--burnt)}
+.band--alt .carousel-track .shotbox{background:#122a1d; border-color:var(--hair-dark)}
+.band--alt .carousel-track figcaption{color:var(--on-dark-dim)}
+.band--alt .carousel-nav button{border-color:var(--accent-dark); color:var(--accent-dark)}
+.band--alt .carousel-nav button:hover{background:var(--accent-dark); color:var(--green)}
+@media (prefers-reduced-motion:reduce){ .carousel-track{scroll-behavior:auto} }
+
 /* ═══ project page (jlcsa.html) ════════════════════════════════ */
 .crumb{display:inline-flex; align-items:center; gap:.5rem; font-size:.75rem;
   letter-spacing:.12em; text-transform:uppercase; color:var(--burnt); margin-bottom:1.5rem}

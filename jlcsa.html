@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+  ================================================================
+  jlcsa.html  -  the JLCSA story page
+  Styling comes from style.css, shared with index.html.
+
+  Search for TODO to find the bits to fill in:
+    - the growth story paragraphs
+    - YouTube video IDs
+    - press links
+    - Comic Con photos and captions
+
+  PHOTOS go in images/jlcsa/ :
+    hero.jpg, comiccon-1.jpg ... comiccon-4.jpg
+  Missing photos disappear cleanly, they do not show a placeholder.
+  ================================================================
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>JLCSA — Emma Ruiters</title>
+<meta name="description" content="The Japanese Language Club of South Africa: founded by Emma Ruiters in January 2020, grown to over 1,000 members and 300 students across Cape Town, Pretoria and Johannesburg, and sold in 2026.">
+<link rel="canonical" href="https://emmaruiters.com/jlcsa.html">
+<meta name="theme-color" content="#EDF2E4">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="JLCSA — founding and selling South Africa's first Japanese language club">
+<meta property="og:description" content="From a study group in Cape Town to 1,000+ members and an exit, 2020 to 2026.">
+<meta property="og:url" content="https://emmaruiters.com/jlcsa.html">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2711%27%20fill%3D%27%231B3B2B%27%2F%3E%3Crect%20y%3D%2752%27%20width%3D%2764%27%20height%3D%2712%27%20fill%3D%27%23B14E1B%27%2F%3E%3Cg%20fill%3D%27%23EDF2E4%27%3E%3Crect%20x%3D%2719%27%20y%3D%2714%27%20width%3D%279%27%20height%3D%2736%27%2F%3E%3Crect%20x%3D%2719%27%20y%3D%2714%27%20width%3D%2727%27%20height%3D%278%27%2F%3E%3Crect%20x%3D%2719%27%20y%3D%2728%27%20width%3D%2721%27%20height%3D%277%27%2F%3E%3Crect%20x%3D%2719%27%20y%3D%2742%27%20width%3D%2727%27%20height%3D%278%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/style.css">
+
+<script>
+function quiet(img){ img.onerror = null; var b = img.parentNode; if(b) b.remove(); }
+function slide(id, dir){
+  var t = document.getElementById(id);
+  if(!t) return;
+  var card = t.querySelector('figure');
+  var step = card ? card.getBoundingClientRect().width + 16 : t.clientWidth * 0.8;
+  t.scrollBy({ left: step * dir, behavior: 'smooth' });
+}
+function ph(img, path, hint){
+  img.onerror = null;
+  var box = img.parentNode; img.remove();
+  var d = document.createElement('div');
+  d.className = 'ph';
+  d.innerHTML = 'Add ' + path + '<small>' + hint + '</small>';
+  box.appendChild(d);
+}
+</script>
+</head>
+
+<body>
+
+<!-- ═══ HERO ══════════════════════════════════════════════════ -->
+<header class="phero phero--bare">
+  <div class="wrap">
+    <a class="crumb" href="/">&larr; Emma Ruiters</a>
+    <span class="label">Founded 2020 &middot; Sold 2026</span>
+    <h1>JLCSA</h1>
+    <p class="standfirst">South Africa&rsquo;s first Japanese language club, built from a study group in Cape Town into a business, and sold six years later.</p>
+
+    <div class="stats">
+      <div><b>1,000+</b><span>members</span></div>
+      <div><b>300+</b><span>students</span></div>
+      <div><b>3</b><span>cities: Cape Town, Pretoria, Johannesburg</span></div>
+      <div><b>6</b><span>years, founded to exit</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ THE STORY ═════════════════════════════════════════════ -->
+<section class="band" id="story">
+  <div class="wrap">
+    <span class="label">The story</span>
+    <h2 class="sec">From a study group to a business</h2>
+
+    <div class="prose">
+      <p>TODO &mdash; how it started. What was missing in South Africa, and why you began it in January 2020.</p>
+      <p>TODO &mdash; how it grew. The move from one city to three, what the offer became: classes, resources, events, translation and consulting.</p>
+      <p>TODO &mdash; the hardest part. What nearly broke it, or what you got wrong first.</p>
+      <p>TODO &mdash; the exit. Why you stepped down as Director in 2026 and what happens to the club now.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRESS ═════════════════════════════════════════════════ -->
+<section class="band band--alt" id="press">
+  <div class="wrap">
+    <span class="label">Press</span>
+    <h2 class="sec">In the news</h2>
+
+    <ul class="pubs">
+      <li>
+        <h3><a href="TODO-url">TODO &mdash; headline</a></h3>
+        <p class="meta">Outlet &middot; format &middot; year</p>
+      </li>
+      <li>
+        <h3><a href="TODO-url">TODO &mdash; headline</a></h3>
+        <p class="meta">Outlet &middot; format &middot; year</p>
+      </li>
+      <!-- Copy a block above for each additional item. -->
+    </ul>
+  </div>
+</section>
+
+<!-- ═══ VIDEO ═════════════════════════════════════════════════
+     Replace VIDEO_ID with the id from a YouTube URL. In
+     https://www.youtube.com/watch?v=dQw4w9WgXcQ the id is
+     the part after v= .  Delete any .vid block you do not need.
+     ═══════════════════════════════════════════════════════ -->
+<section class="band" id="video">
+  <div class="wrap">
+    <span class="label">Video</span>
+    <h2 class="sec">On air</h2>
+
+    <div class="vids">
+      <figure style="margin:0">
+        <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="TODO video title" loading="lazy" allowfullscreen></iframe></div>
+        <p class="vid-cap">TODO &mdash; what this is, outlet and year.</p>
+      </figure>
+      <figure style="margin:0">
+        <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="TODO video title" loading="lazy" allowfullscreen></iframe></div>
+        <p class="vid-cap">TODO &mdash; what this is, outlet and year.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMIC CON ═════════════════════════════════════════════
+     The carousel scrolls horizontally and snaps. Copy a <figure>
+     block to add a photo; delete one to remove it. Photos live in
+     images/jlcsa/ and vanish silently if missing.
+     ═══════════════════════════════════════════════════════ -->
+<section class="band band--alt" id="comiccon">
+  <div class="wrap">
+    <span class="label">Events</span>
+    <h2 class="sec">Comic Con and beyond</h2>
+
+    <div class="prose">
+      <p>TODO &mdash; one short paragraph: which Comic Con events, which years, and what JLCSA did there.</p>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-track" id="cc-track">
+        <figure>
+          <div class="shotbox"><img src="images/jlcsa/comiccon-1.jpg" alt="" onerror="quiet(this)"></div>
+          <figcaption>TODO &mdash; caption</figcaption>
+        </figure>
+        <figure>
+          <div class="shotbox"><img src="images/jlcsa/comiccon-2.jpg" alt="" onerror="quiet(this)"></div>
+          <figcaption>TODO &mdash; caption</figcaption>
+        </figure>
+        <figure>
+          <div class="shotbox"><img src="images/jlcsa/comiccon-3.jpg" alt="" onerror="quiet(this)"></div>
+          <figcaption>TODO &mdash; caption</figcaption>
+        </figure>
+        <figure>
+          <div class="shotbox"><img src="images/jlcsa/comiccon-4.jpg" alt="" onerror="quiet(this)"></div>
+          <figcaption>TODO &mdash; caption</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-nav">
+        <button type="button" onclick="slide('cc-track',-1)" aria-label="Previous photo">&larr;</button>
+        <button type="button" onclick="slide('cc-track',1)" aria-label="Next photo">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <span class="label">Contact</span>
+    <p style="margin:1rem 0 0"><a class="mail" href="mailto:emma.ruiters@gmail.com">emma.ruiters@gmail.com</a></p>
+    <ul class="links" style="margin-top:3rem">
+      <li><a href="/"><strong>Back to emmaruiters.com</strong><span>Work, writing and speaking</span></a></li>
+      <li><a href="https://www.linkedin.com/in/emma-ruiters-916a2a141/"><strong>LinkedIn</strong><span>Professional record</span></a></li>
+    </ul>
+    <p class="fine">London &middot; Updated August 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
